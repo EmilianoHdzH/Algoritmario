@@ -38,3 +38,9 @@ Si quieres tener una priority_queue de menor a mayor tienes dos opciones.
    #+begin_src C++
    priority_queue<int,vector<int>,greater<int>>pq;
    #+end_src
+
+* Revisar long long y no ciclar cosas que no son necesarias
+Cuando hay una cosa precalculada, no hay que meterla en la funcion
+para todos los casos, tal como nos paso al inicio de la criba, pues
+lo unico que cambiaran son los indices de interes pero no la informacion
+dentro de en este caso la criba.
